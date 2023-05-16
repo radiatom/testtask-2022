@@ -14,7 +14,7 @@ function App() {
       </header>
       <main className="App-main">
         <Hello/>
-        <div className="container">components</div>
+        <div className="container"></div>
       </main>
       <footer className="App-footer">
         <div className="container">
