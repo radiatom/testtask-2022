@@ -2,7 +2,6 @@ import "./App.scss";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hello from "./components/Hello/Hello";
-import helloFoto from "./img/week7_1100.jpg";
 
 function App() {
   return (
