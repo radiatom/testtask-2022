@@ -1,8 +1,13 @@
-$header-higth: 40px;
-$footer-higth: 40px;
-$width-container: 900px;
-$font-family: 'Times New Roman', Times, serif;
+@import url(https://fonts.googleapis.com/css?family=Nunito:regular,500italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Asap:regular,700italic&display=swap);
+// @import "./fonts/";
+//100 - thin, 300 - lite/light, 400 - normal/regular, 500 - medium, 600 - semibold, 700 - bold, 800 - extrabolt, 900 - black
+//&display=swap&subset=cyrillic-ext
+$font-family: Nunito;
 
+$header-higth: 60px;
+$footer-higth: 100px;
+$width-container: 1170px;
 .App {
   font-family: $font-family;
   width: 100%;
@@ -11,21 +16,62 @@ $font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   &-header {
-    background-color: rgb(108, 114, 114);
+    background-color: white;
   }
   &-main {
+    width: $width-container;
+    margin: 0 auto;
     flex: 1 1 auto;
-  }
-  &-footer {
-    background-color: rgb(108, 114, 114);
+    @media (max-width: $width-container) {
+      & {
+        width: 100%;
+      }
+    }
   }
 }
 .container {
   max-width: $width-container;
   margin: 0 auto;
+  // border: 1px black solid;
   @media (max-width: $width-container) {
     & {
-      max-width: 100%;
+      max-width: 904px;
     }
   }
+  @media (max-width: 904px) {
+    & {
+      max-width: 704px;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 704px) {
+    & {
+      max-width: 328px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 34px;
+  background: #f4e041;
+  border-radius: 80px;
+  font-size: 16px;
+  line-height: 26px;
+  &:hover {
+    background: #ffe302;
+  }
+}
+.disabled {
+  background: #b4b4b4;
+  color: white;
+}
+.Title {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
 }

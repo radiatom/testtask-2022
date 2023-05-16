@@ -1,4 +1,14 @@
-@import './../../App';
-.Header{
-      height: $header-higth;
+@import "./../../App";
+.Header {
+  height: $header-higth;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    width: 210px;
+    height: 34px;
+    justify-content: space-between;
+    
+  }
 }
