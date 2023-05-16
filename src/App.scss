@@ -1,0 +1,31 @@
+$header-higth: 40px;
+$footer-higth: 40px;
+$width-container: 900px;
+$font-family: 'Times New Roman', Times, serif;
+
+.App {
+  font-family: $font-family;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &-header {
+    background-color: rgb(108, 114, 114);
+  }
+  &-main {
+    flex: 1 1 auto;
+  }
+  &-footer {
+    background-color: rgb(108, 114, 114);
+  }
+}
+.container {
+  max-width: $width-container;
+  margin: 0 auto;
+  @media (max-width: $width-container) {
+    & {
+      max-width: 100%;
+    }
+  }
+}
