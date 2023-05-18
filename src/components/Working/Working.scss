@@ -1,0 +1,50 @@
+@import "./../../App";
+
+.Working {
+  margin-bottom: 140px;
+  .Working__title {
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 50px;
+  }
+  .Working__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -14.5px;
+    .item {
+      flex: 0 1 33.333%;
+      padding: 0 14.5px;
+      margin-bottom: 29px;
+      .card {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+        .img {
+          margin: 0 auto;
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 26px;
+          margin: 20px 0;
+        }
+      }
+      @media (max-width: 904px) {
+        & {
+          flex: 0 1 50%;
+        }
+      }
+      @media (max-width: 704px) {
+        & {
+          flex: 0 1 100%;
+        }
+      }
+    }
+  }
+  .Working__btn {
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
+}
